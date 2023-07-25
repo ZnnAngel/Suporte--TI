@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<link rel="stylesheet" href="~/css/StyleLoginIndex.css" asp-append-version="true" />
+
+<h2>Login</h2>
+@using (Html.BeginForm("Index", "Login", FormMethod.Post))
+{
+    <label for="usuario">Usuário</label>
+    <input type="text" id="usuario" name="nome_usuario" required>
+    <br>
+    <br>
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha" required>
+    <br>
+    <br>
+    <input type="submit" value="Login">
+
+    @if (ViewBag.MensagemErro != null)
+    {
+        <div class="alert alert-danger">@ViewBag.MensagemErro</div>
+    }
+}

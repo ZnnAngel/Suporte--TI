@@ -1,0 +1,64 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-image: url('zanini.jpg'); /* Substitua o caminho pela localização da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 120px; /* Adicione margem superior para centralizar verticalmente */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Fundo branco com 50% de transparência */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    color: #fff; /* Cor do texto branca */
+}
+
+/* Adicione estilos para centralizar o formulário à direita */
+.container {
+    float: right;
+    margin-right: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
